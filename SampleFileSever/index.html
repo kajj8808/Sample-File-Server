@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>upload server</title>
+  </head>
+  <body>
+    <form
+      action="http://1.226.58.251:3200/upload"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input type="file" name="user_file" id="file_input" />
+      <input type="submit" value="submit" />
+    </form>
+    <form action="http://1.226.58.251:3200/test" method="post">
+      <input type="text" name="user_test" id="user_test" />
+      <input type="submit" value="submit_test" />
+    </form>
+  </body>
+</html>
